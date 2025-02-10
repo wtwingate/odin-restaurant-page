@@ -12,18 +12,6 @@
   --beaver-800: #59413a;
   --beaver-900: #4e3a35;
   --beaver-950: #2c1f1c;
-
-  --wedgewood-50: #f2f8f9;
-  --wedgewood-100: #ddebf0;
-  --wedgewood-200: #bfd8e2;
-  --wedgewood-300: #93bbcd;
-  --wedgewood-400: #6096b0;
-  --wedgewood-500: #48819d;
-  --wedgewood-600: #3c657e;
-  --wedgewood-700: #355469;
-  --wedgewood-800: #324858;
-  --wedgewood-900: #2d3d4c;
-  --wedgewood-950: #1a2732;
 }
 
 html {
@@ -57,11 +45,11 @@ nav > button {
   padding: 1rem;
   border: none;
   cursor: pointer;
-  color: var(--wedgewood-50);
-  background-color: var(--wedgewood-500);
+  color: var(--beaver-50);
+  background-color: var(--beaver-700);
 
   &:hover {
-    background-color: var(--wedgewood-600);
+    background-color: var(--beaver-900);
   }
 }
 
@@ -75,10 +63,20 @@ main {
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr;
+  margin: 2rem 0rem;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
 }
 
 .card {
@@ -112,9 +110,37 @@ img {
   max-width: 100%;
 }
 
+table {
+  width: 600px;
+  margin: 0rem auto;
+  border-collapse: collapse;
+  font-size: 1.25rem;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: var(--beaver-50);
+  background-color: var(--beaver-700);
+}
+
+tr {
+  text-align: center;
+
+  &:nth-child(even) {
+    background-color: var(--beaver-100);
+  }
+}
+
+th,
+td {
+  padding: 0.25rem;
+}
+
 footer {
   color: var(--beaver-50);
-  background-color: var(--beaver-800);
+  background-color: var(--beaver-700);
   margin-top: auto;
 }
 
